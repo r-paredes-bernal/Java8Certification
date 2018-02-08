@@ -18,6 +18,8 @@ public class Question38 {
 		System.out.println(new SimpleDateFormat("YY-MM-DD").format(new Date()));
 		System.out.println(new SimpleDateFormat("yy-mm-dd").format(new Date())); // *
 		System.out.println(new SimpleDateFormat("YY-mm-dd").format(new Date()));
+		
+		// Ir a la pregunta 59
 	}
 
 }
