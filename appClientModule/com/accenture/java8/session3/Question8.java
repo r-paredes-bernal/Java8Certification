@@ -17,9 +17,10 @@ public class Question8 {
 		
 		books.stream()
 					.filter( b -> b.getCategory().equals(Book.Category.FICTION))
-					.peek( b -> System.out.println(b.getTitle()));
+					.peek( b -> System.out.println(b.getTitle()))
+					.collect(Collectors.toList());
 		
-					// .collect(Collectors.toList());
+		// Collect, Count, Max, Min, Reduce
 	}
 	
 

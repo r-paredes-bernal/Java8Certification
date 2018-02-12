@@ -20,7 +20,7 @@ public class Question9 {
 		students.stream().collect(
 				Collectors.partitioningBy(
 					c -> c.getFaculty() == Student.Faculty.BUSISNESS))
-						.forEach((k,v) -> System.out.println(v)); // k + " " + v
+						.forEach((k,v) -> System.out.println(k + " " + v)); // k + " " + v
 		
 	}
 }

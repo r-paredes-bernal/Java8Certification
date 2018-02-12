@@ -10,12 +10,16 @@ import java.nio.file.Paths;
 public class DeleteFile {
 
 	public DeleteFile() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public static void main(String[] args) {
-		Path path = Paths.get("C:\\CertJava8\\FilesExample\\file3.txt"); // change name
+		// Path path = Paths.get("C:\\CertJava8\\FilesExample\\copiedfiles"); // change name
 		
+		Path path = Paths.get("C:\\CertJava8\\FilesExample\\copiedfiles", "file2.txt"); // change name
+		
+		/*
+		 Path base1 = Paths.get("..", "..", "temp", "delete", "dictionary.txt"); 
+		 */
 		try {
 			Files.delete(path);
 			System.out.println("File Deleted");
@@ -24,6 +28,7 @@ public class DeleteFile {
 			nfe.printStackTrace();
 		} catch (DirectoryNotEmptyException dne) {
 			System.out.println("Directory not empty");
+			dne.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

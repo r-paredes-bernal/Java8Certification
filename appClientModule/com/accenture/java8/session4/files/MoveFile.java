@@ -10,7 +10,6 @@ import java.nio.file.StandardCopyOption;
 public class MoveFile {
 
 	public MoveFile() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public static void main(String[] args) {

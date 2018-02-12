@@ -15,7 +15,7 @@ public class ListFileWithStram {
 	
 		try (Stream<Path> stream = Files.list(Paths.get("C:\\CertJava8\\FilesExample"))) {
 		    stream.map(String::valueOf)
-		        .filter(path -> path.endsWith(".txt"))
+		        .filter(path -> path.endsWith(".js")) // comment this 
 		        .forEach(System.out::println);
 		}
 	}

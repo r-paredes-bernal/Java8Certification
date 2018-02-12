@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 public class Question58 {
 
 	public Question58() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public static void main(String[] args) {
@@ -18,11 +17,10 @@ public class Question58 {
 		
 		List<Integer> finalList = initialList.stream()
 				.filter(i -> i % 2 == 0)
-				//.filter(i -> i % 3 == 0)
-				//.filter(i -> i % 5 == 0)
-				//.filter(i -> i % 7 == 0)
+				.filter(i -> i % 3 == 0)
+				.filter(i -> i % 5 == 0)
+				.filter(i -> i % 7 == 0)
 				.collect(Collectors.toList());
-				
 		System.out.println(finalList);
 	}
 

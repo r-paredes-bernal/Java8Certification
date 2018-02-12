@@ -7,11 +7,10 @@ import java.nio.file.Paths;
 public class ExistFile {
 
 	public ExistFile() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public static void main(String[] args) {
-		Path path = Paths.get("C:\\CertJava8\\FilesExample\\notes.txt"); // change name
+		Path path = Paths.get("C:\\CertJava8\\FilesExample\\notes1.txt"); // change name
 		
 		if ( Files.exists(path) ) {
 			System.out.println("File exists");
