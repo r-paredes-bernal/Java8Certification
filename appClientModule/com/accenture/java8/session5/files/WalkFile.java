@@ -1,4 +1,4 @@
-package com.accenture.java8.session4.files;
+package com.accenture.java8.session5.files;
 
 import java.io.IOException;
 import java.nio.file.Files;

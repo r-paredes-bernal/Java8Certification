@@ -1,0 +1,48 @@
+package com.accenture.java8.session5;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.OpenOption;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+public class Question21 {
+
+	public Question21() {
+	}
+	
+	// Question 21 Diagnostic Test
+	public static void main(String[] args) throws IOException {
+		
+		// Which always open a files and writes new content on it
+		
+		Path source  = Paths.get("C:\\CertJava8\\FilesExample\\file4.txt");
+		
+		BufferedWriter writer1 = Files.newBufferedWriter(source, 
+				new OpenOption[] { StandardOpenOption.TRUNCATE_EXISTING});
+		
+		/*
+		BufferedWriter writer2 = Files.newBufferedWriter(source, 
+				new OpenOption[] { StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.CREATE });
+		
+		/*
+		BufferedWriter writer3 = Files.newBufferedWriter(source, 
+				new OpenOption[] { StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.CREATE_NEW });
+		
+
+		BufferedWriter writer4 = Files.newBufferedWriter(source, 
+				new OpenOption[] { StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE });
+	
+		BufferedWriter writer5 = Files.newBufferedWriter(source, 
+				new OpenOption[] { StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.APPEND });
+		 */
+	
+		writer1.write("Writing test");
+		System.out.println("File created");
+		
+		writer1.flush();
+		System.out.println("File writed");
+	}
+}
