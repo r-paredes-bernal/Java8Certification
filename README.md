@@ -21,7 +21,7 @@ Lambdas:
 Introduction:
 http://www.oracle.com/technetwork/es/articles/java/expresiones-lambda-api-stream-java-2633852-esa.html
 
-Lambda Tutorial:
+Lambda Videos Tutorial:
 https://www.youtube.com/watch?v=gpIUfj3KaOc&list=PLqq-6Pq4lTTa9YGfyhyW2CqdtW9RtY-I3  
 
 Lambda Runnable Example
