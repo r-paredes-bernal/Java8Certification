@@ -7,8 +7,9 @@ public class Question4 {
 		
 		int sum = 1;
 		
-		for (int x = 0; x <= 10 ; x++) 
+		for (int x = 0; x <= 10 ; x++) { 
 				sum+=x;
+		}
 				
 		System.out.println("X value " + x);
 	}

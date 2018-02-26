@@ -4,7 +4,11 @@ interface Question12 {
 	String type = "A";
 	void fly();
 	
-	/*insert code here*/ String getType(){
+	/*
+	 * default
+	 * static
+	 */
+    static String getType() {
 		return type;
 	}
 }

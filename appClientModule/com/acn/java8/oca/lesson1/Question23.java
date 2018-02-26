@@ -12,11 +12,12 @@ public class Question23 {
 		// List<int> list = new ArrayList<int>();
 		list.add(21);
 		list.add(13);
-		list.add(30);
+		list.add(30);//
 		list.add(11);
-		list.add(2);
+		list.add(2);//
 		// insert here, hint use removeif
-		System.out.println();
+		list.removeIf(x -> x % 2 == 0);
+		System.out.println(list);
 	}
 
 }

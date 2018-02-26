@@ -6,8 +6,12 @@ public class Question7 {
 		int[] testData = {1,2,3};
 		
 		// which two options fix below  
-		for ( /*insert code here*/ ){
+		for ( int x : testData ){
 				
+		}
+		
+		for ( int i = 0; i < testData.length; i++ ){
+			
 		}
 	}
 }

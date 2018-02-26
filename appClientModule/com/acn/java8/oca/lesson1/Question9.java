@@ -5,6 +5,7 @@ public class Question9 {
 	// Add a ternary statement that do the same conditional operation
 	public static void main(String[] args) {
 		int x = 10;
+		
 		if ( x > 10 ) {
 			System.out.println(">");
 		} else if ( x < 10 ) {
@@ -12,5 +13,9 @@ public class Question9 {
 		} else {
 			System.out.println("=");
 		}
+		
+		// ? :
+		String valor = x > 10 ? ">" : x < 10 ? "<" : "=";
+		System.out.println( valor ); 
 	}
 }
