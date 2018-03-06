@@ -21,6 +21,8 @@ public class AggregateOperations {
 	    .stream()
 	    .filter(e -> e.getGender() == Person.Sex.MALE) // aggregate operation
 	    .forEach(e -> System.out.println(e.getName())); 
+				
+		
 		
 	}
 }
