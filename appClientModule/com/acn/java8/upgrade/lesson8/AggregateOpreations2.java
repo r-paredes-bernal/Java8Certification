@@ -2,7 +2,6 @@ package com.acn.java8.upgrade.lesson8;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
 public class AggregateOpreations2 {
 	/**
@@ -23,6 +22,7 @@ public class AggregateOpreations2 {
 		
 		System.out.println(average);
 		
+		// HOMEWORK: Lazy Loading - hibernate
 
 		}
 }

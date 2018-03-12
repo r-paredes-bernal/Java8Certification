@@ -10,9 +10,9 @@ import java.util.stream.Collectors;
 public class Collectors1 {
 
 	public static void main(String[] args) {
-		List<String> people = Arrays.asList("Peter", "Ana", "Roger");
+		//List<String> people = Arrays.asList("Peter", "Ana", "Roger");
 		
-		//List<String> people = Arrays.asList("Peter", "Ana", "Roger", "Peter");
+		List<String> people = Arrays.asList("Peter", "Ana", "Roger", "Peter");
 		
 		// ToList collector can be used for collecting all Stream elements into a List instance
 		List<String> result1 = people.stream()
@@ -33,7 +33,7 @@ public class Collectors1 {
 		
 		// Joining collector can be used for joining Stream<String> elements.
 		String result4 = people.stream()
-				  .collect(Collectors.joining()); // Add a custom separator |
+				  .collect(Collectors.joining("|")); // Add a custom separator |
 		
 		System.out.println(result4);
 		

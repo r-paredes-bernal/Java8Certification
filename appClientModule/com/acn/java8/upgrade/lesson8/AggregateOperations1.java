@@ -3,7 +3,7 @@ package com.acn.java8.upgrade.lesson8;
 import java.util.Arrays;
 import java.util.List;
 
-public class AggregateOperations {
+public class AggregateOperations1 {
 	
 	public static void main(String[] args) {
 		List<Person> people = Arrays.asList( new Person("Ana", Person.Sex.FEMALE), 
@@ -17,12 +17,12 @@ public class AggregateOperations {
 		    }
 		}
 		
+		// Iterate with streams Java 8
 		people
 	    .stream()
 	    .filter(e -> e.getGender() == Person.Sex.MALE) // aggregate operation
 	    .forEach(e -> System.out.println(e.getName())); 
 				
-		
 		
 	}
 }
