@@ -14,8 +14,7 @@ public class Question9 {
 			System.out.println("=");
 		}
 		
-		// ? :
-		String valor = x > 10 ? ">" : x < 10 ? "<" : "=";
+		String valor = "?";
 		System.out.println( valor ); 
 	}
 }

@@ -6,7 +6,7 @@ public class Question6 {
 	public static void main(String[] args) {
 		Double number = null;
 		try {
-			number = Double.valueOf("120D");
+			number = 120;
 		} catch (NumberFormatException nfe) {
 			nfe.printStackTrace();
 		}

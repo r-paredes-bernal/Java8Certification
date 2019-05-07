@@ -5,13 +5,9 @@ public class Question7 {
 	public static void main(String[] args) {
 		int[] testData = {1,2,3};
 		
-		// which two options fix below  
-		for ( int x : testData ){
-				
-		}
+		// add a traditional "for" to print each array value
 		
-		for ( int i = 0; i < testData.length; i++ ){
-			
-		}
+		// add a foreach to print each array value
+
 	}
 }

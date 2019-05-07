@@ -4,6 +4,6 @@ public class Question3 {
 
 	// What is the output
 	public static void main(String[] args) {
-		int array[] = new int[-2]; // NegativeArraySizeException
+		int array[] = new int[-2]; 
 	}
 }
